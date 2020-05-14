@@ -27,8 +27,7 @@ nltk v3.4.5
         An overview of the labels and topics is printed out in the terminal.
 
 # Modules
-
-    ## Data Extraction
+   ## Data Extraction
 
         Extracted data with Beautiful soup.
         Initially just merge the title and body together. 
@@ -38,15 +37,14 @@ nltk v3.4.5
             Tokenize the text and remove stop words.
 
 
-    ## Data exploration
-
-        ### Nans   
+   ## Data exploration
+        Nans   
             Alot of columns with no information
             Shows alot of missing topics
             Initial thoughs are keep the topics to fit the TF-IDF to give a broader sence of what words are truly unique,
             then remove the nans.
         
-        ### Topics
+        Topics
             Not all topics in test are present in train. This makes it hard to assing topics to.
             Initial thoughs is correlate master list of topics with the fact book data to find similarities between topics and entities. 
             Then give words a weight for a certain class, even the ones not present in the training data.
@@ -54,32 +52,32 @@ nltk v3.4.5
             This indicates we could gain alot by assigning different weights to classes during training.
             This also indicates that generalisation on those topics will be hard, given the limmited training data.
 
-        ### Tf-IDF inspection
+        Tf-IDF inspection
             Fitting the vectoriser on the entire corpus yielded alot of irrelevant top scoring words. 
             This warrants a deeper look into what type of texts are present.
             A look into finding which words correlate with which classes would be a good way to reduce the amount of features
             removing articles without any topic, before fitting yiledes a lot more sensible word scores.
 
-        ### Initial conclusions
+        Initial conclusions
             Remove nans before fitting TF-IDF vectorizer
             Keep all features to preserve the semantic meaning of the less represented topics.
             Use neural nets to deal with the resultihg high dimentionality data.
 
-    ## Main
+   ## Main
         Assign weights to the cross entropy loss based on the relative frequency of the topics.
         Setup a standard train / test environment for the model.
 
 
 # Models
     Testing three simple Neural nets to estimate which architecture would be best suited for the task
-    ## Single_layer
+   ## Single_layer
         A simple single layer NN used as a base line. 
         My initial thoughts are that the presence of specific words will be enough to estimate the topic.
  
-    ## Standard
+   ## Standard
         A simple NN to test if more complex models yield more accurate Results
 
-    ## Mini_hourglass
+   ## Mini_hourglass
         The hour glass shape forces the network to create 
         a more efficient feature representation, and ignore irrelevant features. 
 
