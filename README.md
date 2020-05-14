@@ -4,12 +4,12 @@
 A small example of how i approach a text classification problem
 
 # Build with
-tqdm v 4.36.1
-pandas v0.23.4
-sklearn v0.20.3
-numpy v1.15.4
-BeautifulSoup v4.9.0
-nltk v3.4.5
+tqdm v 4.36.1  
+pandas v0.23.4  
+sklearn v0.20.3  
+numpy v1.15.4  
+BeautifulSoup v4.9.0  
+nltk v3.4.5  
 
 # How to
     Run extract_data.py
