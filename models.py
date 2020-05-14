@@ -64,6 +64,6 @@ class Valid_Dataset(Dataset):
 
         target = np.array(self.targets[idx])
 
-        inp = torch.from_numpy(inp)[0].float().cuda()  #Fix wierd dimention buig here
+        inp = torch.from_numpy(inp)[0].float().cuda()
         target = torch.from_numpy(target).long().cuda()
         return inp, target
