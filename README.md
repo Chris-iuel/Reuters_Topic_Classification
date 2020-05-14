@@ -10,6 +10,7 @@ sklearn v0.20.3
 numpy v1.15.4  
 BeautifulSoup v4.9.0  
 nltk v3.4.5  
+torch v1.01
 
 # How to
     Run extract_data.py
