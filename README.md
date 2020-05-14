@@ -83,7 +83,7 @@ nltk v3.4.5
 
 
 # Results
-    85-88% Accuracy on all three models. This is inclusive to determine which model architecture is best.  
+    85-88% Accuracy on all three models. This is inconclusive to determine which model architecture is best.  
     I added in batch normalisation and drop out to prevent overfitting on the larger networks,
      as this was an apparent problem.
     A look at the prediction plot shows that most errors come from a couple of cases where the networks struggle.
